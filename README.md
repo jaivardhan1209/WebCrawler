@@ -9,6 +9,9 @@ Delay: it will add delay for subsequent call.
 urllist: this is exhaustive list of all the url to parse.
 urllistDict: This structure keep track of parsed url so that after visit mark the url as visited.
 
+example: 
+3 0 urllist.txt urllistDict.csv
+
 ---------------- How to keep the crawling on track ------------
 I tried to parse the url till first occurance of / . and then match with the child url or visiting url. If the prefix of parent
 and child url is different then it might lead to unrelated page and kill our computation process. So I discard all those children.
